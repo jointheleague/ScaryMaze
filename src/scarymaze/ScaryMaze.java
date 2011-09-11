@@ -15,6 +15,8 @@ import javax.swing.JFrame;
  * @author avh4
  */
 public class ScaryMaze extends JComponent {
+    
+    private Color BRIGHT_PINK = new Color(255, 60, 140);
 
     /**
      * @param args the command line arguments
@@ -36,7 +38,10 @@ public class ScaryMaze extends JComponent {
     @Override
     protected void paintComponent(Graphics g) {
         
-        g.setColor(Color.PINK.brighter());
+        g.setColor(BRIGHT_PINK);
+        g.fillRect(0, 0, 1000, 800);
+        
+        
         
     }
     
